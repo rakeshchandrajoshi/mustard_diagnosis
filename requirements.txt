@@ -1,5 +1,5 @@
 torch
 torchvision
-pillow==11.0.0
+pillow==10.0.1
 contextlib
 numpy
