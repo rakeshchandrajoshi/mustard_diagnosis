@@ -77,11 +77,11 @@ elif page == "About the Project":
     col1, col2 = st.columns(2)
 
     with col1:
-        amity_logo = Image.open("amity_logo.png")  # Place your logo file accordingly
+        amity_logo = Image.open("acai_logo.jpg")  # Place your logo file accordingly
         st.image(amity_logo, width=150, caption="Amity Centre for Artificial Intelligence\nAmity University Noida")
 
     with col2:
-        icar_logo = Image.open("icar_logo.png")
+        icar_logo = Image.open("nibsm_logo.jpg")
         st.image(icar_logo, width=150, caption="ICAR-National Institute of Biotic Stress Management\nBaronda, Chhattisgarh")
 
     st.markdown("""
