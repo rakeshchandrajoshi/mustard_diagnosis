@@ -90,8 +90,7 @@ elif page == "About the Project":
     This app is a joint collaborative project between the **Amity Centre for Artificial Intelligence, Amity University Noida**  
     and the **ICAR-National Institute of Biotic Stress Management, Baronda, Chhattisgarh**.
 
-    The aim is to provide farmers and researchers with an AI-powered tool to accurately classify aphid infestation levels on mustard plants,  
-    helping timely intervention and better crop management.
+    The aim is to provide farmers and researchers with an AI-powered tool to accurately classify aphid infestation levels on mustard plants, helping timely intervention and better crop management.
 
     The underlying model is a fine-grained classifier built with ResNet50 enhanced by CBAM attention modules, trained on expert-labeled images.  
     The app predicts infestation severity and suggests appropriate remedies to safeguard the crop health.
