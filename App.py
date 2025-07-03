@@ -87,8 +87,7 @@ elif page == "About the Project":
     st.markdown("""
     ### About This App
 
-    This app is a joint collaborative project between the **Amity Centre for Artificial Intelligence, Amity University Noida**  
-    and the **ICAR-National Institute of Biotic Stress Management, Baronda, Chhattisgarh**.
+    This app is a joint collaborative project between the **Amity Centre for Artificial Intelligence, Amity University Noida**  and the **ICAR-National Institute of Biotic Stress Management, Baronda, Chhattisgarh**.
 
     The aim is to provide farmers and researchers with an AI-powered tool to accurately classify aphid infestation levels on mustard plants, helping timely intervention and better crop management.
 
