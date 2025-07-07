@@ -103,32 +103,32 @@ def preprocess_image(image):
     ])
     return transform(image).unsqueeze(0)
 
-# ====== Streamlit UI ======
-st.title("🌿 Mustard Aphid Condition Classifier")
-st.markdown("Upload a mustard plant image to detect **aphid infestation severity** or **healthy condition**.")
+# # ====== Streamlit UI ======
+# st.title("🌿 Mustard Aphid Condition Classifier")
+# st.markdown("Upload a mustard plant image to detect **aphid infestation severity** or **healthy condition**.")
 
-uploaded_file = st.file_uploader("📤 Upload an Image", type=["jpg", "jpeg", "png"])
+# uploaded_file = st.file_uploader("📤 Upload an Image", type=["jpg", "jpeg", "png"])
 
-if uploaded_file:
-    image = Image.open(uploaded_file).convert("RGB")
-    st.image(image, caption="Uploaded Image", use_column_width=True)
+# if uploaded_file:
+#     image = Image.open(uploaded_file).convert("RGB")
+#     st.image(image, caption="Uploaded Image", use_column_width=True)
 
-    input_tensor = preprocess_image(image).to(DEVICE)
-    model = load_model()
+#     input_tensor = preprocess_image(image).to(DEVICE)
+#     model = load_model()
 
-    with torch.no_grad(), amp_autocast():
-        output = model(input_tensor)
-        pred_idx = output.argmax(1).item()
+#     with torch.no_grad(), amp_autocast():
+#         output = model(input_tensor)
+#         pred_idx = output.argmax(1).item()
 
-    pretty_class = class_names[pred_idx]
-    remedy = remedies[original_labels[pred_idx]]
+#     pretty_class = class_names[pred_idx]
+#     remedy = remedies[original_labels[pred_idx]]
 
-    st.markdown("---")
-    st.markdown(f"### 🧪 **Diagnosis**: `{pretty_class}`")
-    st.markdown(f"💡 **Recommendation**: {remedy}")
+#     st.markdown("---")
+#     st.markdown(f"### 🧪 **Diagnosis**: `{pretty_class}`")
+#     st.markdown(f"💡 **Recommendation**: {remedy}")
 
-# --- Sidebar for Navigation ---
-page = st.sidebar.selectbox("Navigate", ["Home", "About the Project"])
+# # --- Sidebar for Navigation ---
+# page = st.sidebar.selectbox("Navigate", ["Home", "About the Project"])
 
 if page == "Home":
     st.title("🌿 Mustard Aphid Condition Classifier")
