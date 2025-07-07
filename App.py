@@ -108,19 +108,20 @@ page = st.sidebar.selectbox("Navigate", ["Home", "About the Project"])
 
 if page == "Home":
     # --- Logos at the top ---
-    col1, col2 = st.columns(2)
-    with col1:
+    logo_col1, logo_col2 = st.columns([1, 1])
+    with logo_col1:
         st.image("acai_logo.jpg", width=150, caption="Amity Centre for Artificial Intelligence\nAmity University Noida")
-    with col2:
+    with logo_col2:
         st.image("nibsm_logo.jpg", width=150, caption="ICAR - National Institute of Biotic Stress Management\nChhattisgarh")
-    col3 = st.columns(1)
-    with col3:
-        st.title("🌿 *AphidScan*: Mustard Aphid Severity Classifier")
-    
+
+    # --- Centered title below the logos ---
+    st.markdown("<h1 style='text-align: center;'>🌿 <em>AphidScan</em>: Mustard Aphid Severity Classifier</h1>", unsafe_allow_html=True)
+
     st.markdown("An AI-powered tool for detecting **aphid infestation stages** or confirming a **healthy mustard plant**.")
     st.markdown("---")
 
     uploaded_file = st.file_uploader("📤 Upload a Mustard Plant Image", type=["jpg", "jpeg", "png"])
+
 
     if uploaded_file:
         image = Image.open(uploaded_file).convert("RGB")
