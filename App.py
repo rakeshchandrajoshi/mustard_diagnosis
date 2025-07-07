@@ -128,7 +128,7 @@ def preprocess_image(image):
 #     st.markdown(f"💡 **Recommendation**: {remedy}")
 
 # # --- Sidebar for Navigation ---
-# page = st.sidebar.selectbox("Navigate", ["Home", "About the Project"])
+page = st.sidebar.selectbox("Navigate", ["Home", "About the Project"])
 
 if page == "Home":
     st.title("🌿 Mustard Aphid Condition Classifier")
