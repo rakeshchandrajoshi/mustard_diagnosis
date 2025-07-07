@@ -159,12 +159,10 @@ The objective is to assist researchers and farmers with an intelligent diagnosti
 
     st.markdown("### 👨‍💻 Developers and Contributors")
     st.markdown("""
-- **Dr. Rakesh Chandra Joshi**  
-- **Prof. M. K. Dutta**  
+- **Dr. Rakesh Chandra Joshi**  and **Prof. M. K. Dutta**  
   *Amity Centre for Artificial Intelligence, Amity University Noida*
 
-- **Dr. Pankaj Sharma**  
-- **Mr. Arkaprava Roy**  
+- **Dr. Pankaj Sharma**  and **Mr. Arkaprava Roy**  
   *ICAR - National Institute of Biotic Stress Management, Chhattisgarh*
 """)
 
