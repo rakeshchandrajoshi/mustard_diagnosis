@@ -114,7 +114,7 @@ if page == "Home":
     with col2:
         st.image("nibsm_logo.jpg", width=150, caption="ICAR - National Institute of Biotic Stress Management\nChhattisgarh")
     col3 = st.columns(1)
-    with col1:
+    with col3:
         st.title("🌿 *AphidScan*: Mustard Aphid Severity Classifier")
     
     st.markdown("An AI-powered tool for detecting **aphid infestation stages** or confirming a **healthy mustard plant**.")
