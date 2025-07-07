@@ -113,7 +113,9 @@ if page == "Home":
         st.image("acai_logo.jpg", width=150, caption="Amity Centre for Artificial Intelligence\nAmity University Noida")
     with col2:
         st.image("nibsm_logo.jpg", width=150, caption="ICAR - National Institute of Biotic Stress Management\nChhattisgarh")
-    st.markdown("🌿 *AphidScan*: Mustard Aphid Severity Classifie")
+    col3 = st.columns(1)
+    with col1:
+        st.title("🌿 *AphidScan*: Mustard Aphid Severity Classifier")
     
     st.markdown("An AI-powered tool for detecting **aphid infestation stages** or confirming a **healthy mustard plant**.")
     st.markdown("---")
