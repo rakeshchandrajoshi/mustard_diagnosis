@@ -111,7 +111,7 @@ def preprocess_image(image):
 
 # if uploaded_file:
 #     image = Image.open(uploaded_file).convert("RGB")
-#     st.image(image, caption="Uploaded Image", use_column_width=True)
+#     st.image(image, caption="Uploaded Image", use_container_width=True)
 
 #     input_tensor = preprocess_image(image).to(DEVICE)
 #     model = load_model()
@@ -138,7 +138,7 @@ if page == "Home":
 
     if uploaded_file:
         image = Image.open(uploaded_file).convert("RGB")
-        st.image(image, caption="Uploaded Image", use_column_width=True)
+        st.image(image, caption="Uploaded Image", use_container_width=True)
 
         input_tensor = preprocess_image(image).to(DEVICE)
         model = load_model()
