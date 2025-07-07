@@ -108,12 +108,13 @@ page = st.sidebar.selectbox("Navigate", ["Home", "About the Project"])
 
 if page == "Home":
     # --- Logos at the top ---
-    col1, col2 = st.columns([1, 6])
+    col1, col2 = st.columns(2)
     with col1:
-        st.image("acai_logo.jpg", width=60)
+        st.image("acai_logo.jpg", width=150, caption="Amity Centre for Artificial Intelligence\nAmity University Noida")
     with col2:
-        st.title("🌿 *AphidScan*: Mustard Aphid Severity Classifier")
-
+        st.image("nibsm_logo.jpg", width=150, caption="ICAR - National Institute of Biotic Stress Management\nChhattisgarh")
+    st.markdown("🌿 *AphidScan*: Mustard Aphid Severity Classifie")
+    
     st.markdown("An AI-powered tool for detecting **aphid infestation stages** or confirming a **healthy mustard plant**.")
     st.markdown("---")
 
