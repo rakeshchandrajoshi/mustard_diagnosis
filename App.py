@@ -166,7 +166,7 @@ The objective is to assist researchers and farmers with an intelligent diagnosti
 - **Dr. Rakesh Chandra Joshi**  and **Prof. M. K. Dutta**  
   *Amity Centre for Artificial Intelligence, Amity University Noida*
 
-- **Dr. Pankaj Sharma**  and **Mr. Arkaprava Roy**  
+- **Dr. Pankaj Sharma**, **Dr. Arkaprava Roy**, **Dr. R.K. Murali Baskaran**, and **Mr. Yogesh Kumar Chelak**
   *ICAR - National Institute of Biotic Stress Management, Chhattisgarh*
 """)
 
