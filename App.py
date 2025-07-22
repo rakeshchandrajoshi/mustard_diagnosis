@@ -115,7 +115,7 @@ if page == "Home":
         st.image("nibsm_logo.jpg", width=150, caption="ICAR - National Institute of Biotic Stress Management\nChhattisgarh")
 
     # --- Centered title below the logos ---
-    st.markdown("<h1 style='text-align: center;'>🌿 <em>AphidScan</em>: AphidScan: Mustard Aphid Infestation Analyzer</h1>", unsafe_allow_html=True)
+    st.markdown("<h1 style='text-align: center;'>🌿 <em>AphidScan</em>: Mustard Aphid Infestation Analyzer</h1>", unsafe_allow_html=True)
 
     st.markdown("An AI-powered tool for detecting **aphid infestation stages** or confirming a **healthy mustard plant**.")
     st.markdown("---")
